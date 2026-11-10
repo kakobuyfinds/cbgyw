@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <title>VigorBuy spreadsheet | Guida a categorie, foto QC e taglie</title>
+  <meta name="description" content="Guida al VigorBuy spreadsheet: esplora le categorie su Cafans e scopri come verificare link prodotto, foto QC, misure e costi di spedizione in Italia.">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="VigorBuy spreadsheet | Guida a categorie, foto QC e taglie">
+  <meta property="og:description" content="Categorie Cafans e consigli per verificare link prodotto, foto QC, taglie e costi di spedizione in Italia.">
+  <meta name="theme-color" content="#f6f1e8">
+  <link rel="icon" href="https://www.cafans.com/favicon.ico" type="image/x-icon">
+  <link rel="preconnect" href="https://static.nike.com">
+  <!-- Nota redazionale: la ricerca diretta su Bing non ha restituito dieci risultati pertinenti verificabili. L'analisi si basa su dieci siti pertinenti trovati con una ricerca web integrativa. -->
+  <style>
+    :root{color-scheme:light;--paper:#f6f1e8;--ink:#17252b;--soft:#495559;--accent:#963b24;--line:#cec5b7;--card:#fffcf6}
+    *,*::before,*::after{box-sizing:border-box}
+    body{margin:0;background:var(--paper);color:var(--ink);font:1rem/1.65 system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}
+    a{color:inherit;text-underline-offset:.2em}
+    :where(a,summary):focus-visible{outline:3px solid #bd4a28;outline-offset:4px}
+    h1,h2,h3,p,figure{margin:0}
+    h1,h2{font-family:Georgia,serif;font-weight:500;line-height:1.06;letter-spacing:-.045em}
+    h1{font-size:clamp(2.65rem,7vw,6.4rem);overflow-wrap:anywhere}
+    h2{font-size:clamp(2rem,4.2vw,3.65rem)}
+    h3{line-height:1.28}
+    p+p{margin-top:.8rem}
+    img{display:block;width:100%;height:auto}
+    .wrap{width:min(72rem,calc(100% - 2rem));margin-inline:auto}
+    .masthead,.foot{display:flex;justify-content:space-between;align-items:center;gap:.5rem 1.5rem;flex-wrap:wrap;padding-block:.9rem}
+    .masthead{border-bottom:1px solid var(--line)}
+    .brand{font-weight:800;text-decoration:none}
+    .eyebrow{font-size:.76rem;font-weight:800;letter-spacing:.11em;text-transform:uppercase;color:var(--accent)}
+    .hero{display:grid;grid-template-columns:1.25fr 1fr;align-items:center;gap:clamp(1.1rem,5vw,4.5rem);padding-block:clamp(1.5rem,4vw,3.6rem)}
+    .hero h1{margin:.45rem 0 .85rem}
+    .lede{max-width:48ch;color:var(--soft);font-size:clamp(1rem,2vw,1.18rem)}
+    .hero figure img{aspect-ratio:5/3;object-fit:cover;object-position:center 68%;background:#e8e8e5}
+    figcaption{padding-top:.45rem;font-size:.82rem;color:var(--soft)}
+    .index{padding:clamp(1rem,3vw,2rem);background:#202f35;color:var(--card)}
+    .index h2{margin-bottom:.95rem}
+    .categories,.plates{list-style:none;padding:0;margin:0;display:grid;gap:.55rem}
+    .categories{grid-template-columns:repeat(5,minmax(0,1fr))}
+    .categories a{display:flex;align-items:center;justify-content:space-between;gap:.4rem;min-height:3rem;height:100%;padding:.5rem .65rem;border:1px solid #859092;text-decoration:none;font-size:.91rem;font-weight:650}
+    .categories a:hover{background:var(--card);color:var(--ink)}
+    .index :focus-visible{outline-color:#ffbf9c}
+    .band{padding-block:clamp(2rem,5vw,4rem);border-bottom:1px solid var(--line)}
+    .band h2{margin:.4rem 0 1rem}
+    .intro{max-width:67ch;color:var(--soft)}
+    .plates{grid-template-columns:repeat(5,minmax(0,1fr));margin-top:1.1rem}
+    .plates img{aspect-ratio:1/1;object-fit:contain;background:#efede7}
+    .reading{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:1rem;margin-top:1.25rem}
+    .reading article{padding:1.05rem;border-top:3px solid var(--accent);background:var(--card)}
+    .reading h3{margin:.3rem 0 .6rem;font-size:1.18rem}
+    .faq{max-width:54rem}
+    details{border-top:1px solid var(--line);padding:.7rem .2rem}
+    details:last-child{border-bottom:1px solid var(--line)}
+    summary{cursor:pointer;font-weight:750;padding:.25rem 0}
+    details p{margin:.55rem 0 .35rem;color:var(--soft)}
+    .foot p{color:var(--soft);font-size:.9rem}
+    @media(max-width:50rem){
+      .categories{grid-template-columns:repeat(3,minmax(0,1fr))}
+      .plates{grid-template-columns:repeat(3,minmax(0,1fr))}
+      .reading{grid-template-columns:1fr}
+    }
+    @media(max-width:36rem){
+      .hero{grid-template-columns:1fr}
+      .hero figure img{aspect-ratio:2/1}
+      .categories,.plates{grid-template-columns:repeat(2,minmax(0,1fr))}
+    }
+  </style>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "inLanguage": "it",
+    "name": "VigorBuy spreadsheet | Guida a categorie, foto QC e taglie",
+    "description": "Guida al VigorBuy spreadsheet: esplora le categorie su Cafans e scopri come verificare link prodotto, foto QC, misure e costi di spedizione in Italia.",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Che cos’è un VigorBuy spreadsheet?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "È una raccolta di link e appunti per confrontare articoli. Una riga utile identifica il venditore, la variante e la data dell’ultimo controllo."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Come verifico se un link prodotto è ancora utile?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Apri la scheda originale e controlla che venditore, modello, colore e taglia coincidano con quelli annotati. Se cambia una variante, ricontrolla anche le foto e il prezzo."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Le foto QC dimostrano l’autenticità di un articolo?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Le foto QC aiutano a valutare dettagli visibili come cuciture, etichette e finiture. Per verificare l’autenticità servono prove di provenienza e, quando opportuno, una verifica specializzata."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Come stimo il costo di spedizione verso l’Italia?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Chiedi un preventivo per il CAP di destinazione e verifica peso fatturabile, supplementi e imposte eventualmente incluse. Aggiungi al preventivo il prezzo dell’articolo e gli altri costi indicati prima del pagamento."
+        }
+      }
+    ]
+  }
+  </script>
+<link rel="canonical" href="https://kakobuyfinds.github.io/cbgyw/">
+</head>
+<body>
+  <header class="wrap masthead">
+    <a class="brand" href="https://www.cafans.com">www.cafans.com</a>
+    <span class="eyebrow">Guida indipendente all’acquisto</span>
+  </header>
+
+  <main class="wrap">
+    <section class="hero" aria-labelledby="titolo">
+      <div>
+        <p class="eyebrow">Categorie · Misure · Foto QC</p>
+        <h1 id="titolo">VigorBuy spreadsheet</h1>
+        <p class="lede">Un VigorBuy spreadsheet è un foglio di riferimento per confrontare link prodotto, varianti e foto di controllo qualità (QC). Qui trovi le categorie su Cafans e un metodo per verificare i dati prima di ordinare.</p>
+      </div>
+      <figure>
+        <img src="https://static.nike.com/a/images/t_web_pdp_535_v2/f_auto,q_auto:eco,u_9ddf04c7-2a9a-4d76-add1-d15af8f0263d,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/b7d9211c-26e7-431a-ac24-b0540fb3c00f/AIR+FORCE+1+%2707.png" width="1070" height="1338" fetchpriority="high" loading="eager" alt="Vista laterale di una sneaker Nike Air Force 1 ’07 bianca">
+        <figcaption>Nike Air Force 1 ’07 · Foto di riferimento del marchio</figcaption>
+      </figure>
+    </section>
+
+    <nav class="index" aria-labelledby="categorie">
+      <h2 id="categorie">Sfoglia le categorie</h2>
+      <ul class="categories">
+        <li><a href="https://cafans.com/category-911-Shoes.html">Scarpe <span aria-hidden="true">↗</span></a></li>
+        <li><a href="https://cafans.com/category-912-Hoodies%2FSweaters.html">Felpe e maglioni <span aria-hidden="true">↗</span></a></li>
+        <li><a href="https://cafans.com/category-913-T-Shirts.html">T-shirt <span aria-hidden="true">↗</span></a></li>
+        <li><a href="https://cafans.com/category-914-Jackets.html">Giacche <span aria-hidden="true">↗</span></a></li>
+        <li><a href="https://cafans.com/category-915-Pants%2FShorts.html">Pantaloni e shorts <span aria-hidden="true">↗</span></a></li>
+        <li><a href="https://cafans.com/category-916-Headwear.html">Cappelli <span aria-hidden="true">↗</span></a></li>
+        <li><a href="https://cafans.com/category-917-Sets.html">Completi <span aria-hidden="true">↗</span></a></li>
+        <li><a href="https://cafans.com/category-918-underwear%2Funderpants.html">Intimo <span aria-hidden="true">↗</span></a></li>
+        <li><a href="https://cafans.com/category-919-Jersey.html">Maglie sportive <span aria-hidden="true">↗</span></a></li>
+        <li><a href="https://cafans.com/category-920-Accessories.html">Accessori <span aria-hidden="true">↗</span></a></li>
+      </ul>
+    </nav>
+
+    <section class="band" aria-labelledby="articoli">
+      <p class="eyebrow">Prima dell’ordine</p>
+      <h2 id="articoli">Tre verifiche per scegliere meglio</h2>
+      <p class="intro">Compila una riga per ogni variante che stai considerando. Se un dato manca, lascialo in sospeso finché trovi una misura, una foto o un preventivo che lo confermi.</p>
+      <div class="reading">
+        <article>
+          <p class="eyebrow">01 · Scheda prodotto</p>
+          <h3>Link prodotto VigorBuy e guida alle taglie</h3>
+          <p>Annota il link originale del venditore, il codice articolo, la variante colore e la data del controllo. Verifica la disponibilità della taglia sulla scheda: due inserzioni con la stessa foto possono avere misure diverse.</p>
+          <p>Per le sneaker, parti dalla lunghezza del piede in centimetri e consulta la tabella di conversione EU/US del modello. Per felpe e giacche, confronta larghezza del torace, lunghezza della manica e larghezza delle spalle con un capo che ti veste bene. Per i cappelli, controlla la circonferenza regolabile.</p>
+        </article>
+        <article>
+          <p class="eyebrow">02 · Controllo qualità</p>
+          <h3>Foto QC VigorBuy: quali dettagli confrontare</h3>
+          <p>Controlla che le foto di magazzino corrispondano alla variante e alla taglia selezionate. Nelle scarpe cerca una vista laterale, una foto della suola e un primo piano dell’etichetta interna. La luce può alterare la percezione del colore.</p>
+          <p>Per l’abbigliamento osserva la simmetria delle cuciture, la finitura degli orli e lo scorrimento della zip, se documentato. Per borse e gioielli chiedi immagini di fodera, chiusura e finiture metalliche. Annota se la foto mostra il tuo articolo o un esemplare precedente.</p>
+        </article>
+        <article>
+          <p class="eyebrow">03 · Preventivo</p>
+          <h3>Spedizione VigorBuy in Italia: stimare il totale</h3>
+          <p>Separa prezzo dell’articolo, spedizione interna al magazzino, eventuali commissioni e tariffa internazionale. Verifica il cambio in euro al momento del pagamento e usa preventivi riferiti allo stesso CAP e alla stessa modalità di consegna.</p>
+          <p>Confronta peso reale, peso volumetrico e dimensioni del pacco. Chiedi quale peso sarà fatturato e controlla tracciamento, copertura assicurativa, imposte eventualmente incluse e condizioni di reso prima di scegliere.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="band" aria-labelledby="foto">
+      <p class="eyebrow">Abbigliamento e accessori</p>
+      <h2 id="foto">Dettagli da osservare</h2>
+      <p class="intro">Le immagini dei marchi sono riferimenti visivi. Disponibilità, provenienza e caratteristiche degli articoli vanno verificate sulle singole schede.</p>
+      <ul class="plates">
+        <li><figure>
+          <img src="https://static.nike.com/a/images/t_web_pdp_535_v2/f_auto,q_auto:eco/dbcb43d1-d508-4275-b239-f988667d5001/AS+M+NK+TCH+FLC+FZ+WR+HOODIE.png" width="1070" height="1338" loading="lazy" decoding="async" alt="Felpa Nike Tech Windrunner nera con cappuccio e cerniera indossata da un modello">
+          <figcaption>Nike · Zip e taglio della felpa</figcaption>
+        </figure></li>
+        <li><figure>
+          <img src="https://media.gucci.com/style/DarkGray_Center_0_0_490x490/1781886629/875733_3HBMD_9664_001_100_0000_Light-gg-cotton-canvas-baseball-hat.jpg" width="490" height="490" loading="lazy" decoding="async" alt="Cappellino Gucci beige con motivo GG e visiera curva">
+          <figcaption>Gucci · Forma della visiera</figcaption>
+        </figure></li>
+        <li><figure>
+          <img src="https://it.louisvuitton.com/images/is/image/lv/1/PP_VP_M/louis-vuitton--P01918_PM2_Front%20view.jpg?wid=450&amp;hei=522&amp;fmt=webp" width="450" height="522" loading="lazy" decoding="async" alt="Borsa Louis Vuitton Speedy Bandoulière 25 in tela monogram con strisce centrali colorate">
+          <figcaption>Louis Vuitton · Manici e tela</figcaption>
+        </figure></li>
+        <li><figure>
+          <img src="https://assets.hermes.com/is/image/hermesproduct/004281S%2007_flat_wm_103?wid=450&amp;hei=600&amp;fit=fit&amp;$product_default_bg$&amp;fmt=webp" width="450" height="600" loading="lazy" decoding="async" alt="Carré Hermès Academia Hippica disteso, con illustrazione equestre multicolore">
+          <figcaption>Hermès · Motivo e bordi del carré</figcaption>
+        </figure></li>
+        <li><figure>
+          <img src="https://assets.christiandior.com/is/image/diorprod/N2241WOMCYD03S_SBG_E01-2?$r9x10_raw$&amp;crop=0,0,4000,5000&amp;wid=450&amp;hei=500&amp;fmt=webp" width="450" height="500" loading="lazy" decoding="async" alt="Collana Dior Petit CD dorata con catena sottile e iniziali CD al centro">
+          <figcaption>Dior · Catena e finitura del gioiello</figcaption>
+        </figure></li>
+      </ul>
+    </section>
+
+    <section class="band faq" aria-labelledby="domande">
+      <h2 id="domande">Domande frequenti</h2>
+      <details>
+        <summary>Che cos’è un VigorBuy spreadsheet?</summary>
+        <p>È una raccolta di link e appunti per confrontare articoli. Una riga utile identifica il venditore, la variante e la data dell’ultimo controllo.</p>
+      </details>
+      <details>
+        <summary>Come verifico se un link prodotto è ancora utile?</summary>
+        <p>Apri la scheda originale e controlla che venditore, modello, colore e taglia coincidano con quelli annotati. Se cambia una variante, ricontrolla anche le foto e il prezzo.</p>
+      </details>
+      <details>
+        <summary>Le foto QC dimostrano l’autenticità di un articolo?</summary>
+        <p>Le foto QC aiutano a valutare dettagli visibili come cuciture, etichette e finiture. Per verificare l’autenticità servono prove di provenienza e, quando opportuno, una verifica specializzata.</p>
+      </details>
+      <details>
+        <summary>Come stimo il costo di spedizione verso l’Italia?</summary>
+        <p>Chiedi un preventivo per il CAP di destinazione e verifica peso fatturabile, supplementi e imposte eventualmente incluse. Aggiungi al preventivo il prezzo dell’articolo e gli altri costi indicati prima del pagamento.</p>
+      </details>
+    </section>
+  </main>
+
+  <footer class="wrap foot">
+    <p>Guida editoriale indipendente. Le categorie rimandano a Cafans.</p>
+    <a href="https://www.cafans.com">Vai a Cafans ↗</a>
+  </footer>
+</body>
+</html>
